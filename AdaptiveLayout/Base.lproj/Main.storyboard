@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -47,14 +48,48 @@
                         </subviews>
                         <color key="backgroundColor" red="0.29019607843137252" green="0.6705882352941176" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="centerY" secondItem="c5n-Y5-2Ug" secondAttribute="centerY" id="0uG-X3-pkX"/>
+                            <constraint firstItem="pTC-ni-kFf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="21I-tI-h7k"/>
                             <constraint firstItem="pTC-ni-kFf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DPg-pu-Vjd"/>
+                            <constraint firstItem="c5n-Y5-2Ug" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="GPZ-bH-aVh"/>
+                            <constraint firstItem="c5n-Y5-2Ug" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="J6e-EK-Ahw"/>
                             <constraint firstItem="c5n-Y5-2Ug" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="Mpv-Te-eAU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pTC-ni-kFf" secondAttribute="bottom" id="N8P-5o-DeI"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pTC-ni-kFf" secondAttribute="bottom" id="Nhl-zD-glE"/>
                             <constraint firstItem="c5n-Y5-2Ug" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="PUX-Jo-oiJ"/>
+                            <constraint firstItem="pTC-ni-kFf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Qxa-wF-WK0"/>
                             <constraint firstAttribute="centerX" secondItem="c5n-Y5-2Ug" secondAttribute="centerX" id="RP8-FF-sQv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pTC-ni-kFf" secondAttribute="trailing" constant="-16" id="bo7-dj-OOB"/>
                             <constraint firstAttribute="trailing" secondItem="pTC-ni-kFf" secondAttribute="trailing" id="xLn-La-SOS"/>
                             <constraint firstItem="pTC-ni-kFf" firstAttribute="top" secondItem="c5n-Y5-2Ug" secondAttribute="bottom" constant="20" id="zXc-nK-M9P"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0uG-X3-pkX"/>
+                                <exclude reference="GPZ-bH-aVh"/>
+                                <exclude reference="J6e-EK-Ahw"/>
+                                <exclude reference="21I-tI-h7k"/>
+                                <exclude reference="Qxa-wF-WK0"/>
+                                <exclude reference="bo7-dj-OOB"/>
+                                <exclude reference="N8P-5o-DeI"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="0uG-X3-pkX"/>
+                                <include reference="GPZ-bH-aVh"/>
+                                <include reference="J6e-EK-Ahw"/>
+                                <exclude reference="Mpv-Te-eAU"/>
+                                <exclude reference="PUX-Jo-oiJ"/>
+                                <exclude reference="RP8-FF-sQv"/>
+                                <include reference="21I-tI-h7k"/>
+                                <exclude reference="DPg-pu-Vjd"/>
+                                <include reference="Qxa-wF-WK0"/>
+                                <include reference="bo7-dj-OOB"/>
+                                <exclude reference="zXc-nK-M9P"/>
+                                <include reference="N8P-5o-DeI"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
