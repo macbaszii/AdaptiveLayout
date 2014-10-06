@@ -24,22 +24,30 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pTC-ni-kFf" userLabel="TextContainer">
                                 <rect key="frame" x="0.0" y="237" width="600" height="363"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cupertino" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yku-IO-tWr">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cupertino" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Yku-IO-tWr">
                                         <rect key="frame" x="-23" y="10" width="646" height="179"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="150"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" type="system" pointSize="90"/>
+                                        </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHC-j4-aQ3">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="28C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jHC-j4-aQ3">
                                         <rect key="frame" x="75" y="54" width="450" height="299"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="250"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" type="system" pointSize="150"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.21568627450980393" green="0.50196078431372548" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="jHC-j4-aQ3" secondAttribute="centerX" id="QYS-tD-D8e"/>
+                                    <constraint firstAttribute="width" secondItem="Yku-IO-tWr" secondAttribute="width" id="Zsb-DI-gGG"/>
+                                    <constraint firstAttribute="width" secondItem="jHC-j4-aQ3" secondAttribute="width" id="eG9-ES-Lrw"/>
                                     <constraint firstAttribute="centerX" secondItem="Yku-IO-tWr" secondAttribute="centerX" id="i4g-WH-ZOI"/>
                                     <constraint firstAttribute="bottom" secondItem="jHC-j4-aQ3" secondAttribute="bottom" constant="10" id="sxy-tK-ZpN"/>
                                     <constraint firstItem="Yku-IO-tWr" firstAttribute="top" secondItem="pTC-ni-kFf" secondAttribute="top" constant="10" id="tuG-OO-0S9"/>
